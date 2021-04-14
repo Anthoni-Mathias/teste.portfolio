@@ -40,7 +40,7 @@
     color: black;
 }
 
-.button.primary-button::after {
+.button.primary-button::after, .button.secondary-button::after {
     position: absolute;
     top: -2px; left: -2px;
     bottom: -2px; right: -2px;
@@ -48,4 +48,16 @@
     content: '';
     z-index: -1;
     border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6 ease;
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
 }
