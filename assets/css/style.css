@@ -2,6 +2,9 @@
 
 @import url(./font.css);
 
+/*Css varibles*/
+@import url(./partials/_variables.css);
+
 /*start nav*/
 
 .header_area .main-menu .navbar .navbar-brand {
@@ -13,10 +16,12 @@
 }
 
 .header_area .main-menu .nav-item .nav-link {
-    font-family: "Roboto", cursive;
+    font-family:var(--roboto);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
+    color: var(--title-color);
 }
+
 
 /*start nav*/
