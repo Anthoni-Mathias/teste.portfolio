@@ -5,6 +5,9 @@
 /*Css varibles*/
 @import url(./partials/_variables.css);
 
+/*Global css import*/
+@import url(./partials/_global.css);
+
 /*start nav*/
 
 .header_area .main-menu .navbar .navbar-brand {
@@ -72,5 +75,7 @@
     padding: 7rem 0;
     width: 90rem;
 }
+
+
 
 /*End Banner Area/*
