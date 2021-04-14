@@ -38,3 +38,12 @@
 }
 
 /*start nav*/
+
+/*Banner Area*/
+
+.site-main .site-banner {
+    background: url(../images/banner/home-banner.png) no-repeat;
+    background-position: 0% 50%;
+}
+
+/*End Banner Area/*
