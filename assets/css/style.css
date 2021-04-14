@@ -1,6 +1,6 @@
 /* import fonts fron font */
 
-@import url(./font.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*Css varibles*/
 @import url(./partials/_variables.css);
