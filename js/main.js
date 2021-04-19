@@ -19,7 +19,13 @@ $(document).ready(function () {
 
     $('.project-area .button-group #btn1').trigger('click');
 
-    //Owl-carousel
+    $('.project-area .grid .test-popup-link').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+    });
+
+
+    // Owl-carousel
 
     $('.site-main .about-area .owl-carousel').owlCarousel({
         loop: true,
@@ -35,17 +41,17 @@ $(document).ready(function () {
         }
     })
 
-    //stick navigation menu
+    // sticky navigation menu
 
-    let nav_offset_top = $('.header_area').height() + 50
-    
-    function navbarFixed(){
-        if($('.header_area').length){
-            $(window).scroll(function(){
-                let scroll =$(window).scrollTop();
-                if(scroll >= nav_offset_top){
+    let nav_offset_top = $('.header_area').height() + 50;
+
+    function navbarFixed() {
+        if ($('.header_area').length) {
+            $(window).scroll(function () {
+                let scroll = $(window).scrollTop();
+                if (scroll >= nav_offset_top) {
                     $('.header_area .main-menu').addClass('navbar_fixed');
-                }else{
+                } else {
                     $('.header_area .main-menu').removeClass('navbar_fixed');
                 }
             })
